@@ -5,10 +5,25 @@ html{
 /*Website Header*/
 h1{
 	text-align: center;
-	padding-top: 20px;
 	font-family: 'Homemade Apple', cursive;
 	font-size: 4rem;
+	padding: 20px 0px 0px 0px;
 }
+
+@media (min-width: 576px) and (max-width: 768px){
+	h1{
+		font-size: 1.8rem !important;
+	}
+	.navbar{
+		padding-top: 0px;
+		padding-bottom: 1px;
+	}
+	.navbar-toggler{
+		margin-top: 1px;
+	}
+}
+
+
 
 h2{
 	text-align: center;
@@ -39,9 +54,49 @@ h2{
 	background: white;
 }
 
+@media (min-width: 768px) and (max-width: 992px){
+	.navbar{
+		padding: 0px 10px 10px 10px;
+	}
+
+}
+
+@media (max-width: 576px){
+	.navbar{
+		padding-top: 0;
+		padding-bottom: 0; 
+	}
+	h1{
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 277px){
+	.header-xs{
+		display: none;
+	}
+	.navbar-toggler{
+		border: none;
+	}
+}
+
+@media (max-height: 470px){
+	.navbar-nav{
+		flex-flow: wrap;
+		justify-content: center;
+	}
+	.navbar-nav .dropdown-menu{
+		position: absolute !important;
+	}
+}
+
 .dropdown-menu{
 	font-size: 1.5rem;
 }
+
+/*.dropdown-item{
+	text-align: center;
+}*/
 
 a:hover{
 	transition: 0.3s;
