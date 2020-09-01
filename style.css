@@ -101,7 +101,7 @@ h2{
 /*button:focus, a:focus,*/ 
 
 a#navbarDropdown.nav-link.dropdown-toggle:active, a#navbarDropdown.nav-link.dropdown-toggle:focus, button:focus, a:focus{
-	outline: 5px auto #8f8f8f !important;
+	outline: none;/* 5px auto #8f8f8f !important;*/
 }
 
 a:hover{
