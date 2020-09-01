@@ -99,7 +99,7 @@ h2{
 }*/
 
 button:focus, a:focus{
-	outline: 5px auto #8f8f8f !important;
+	outline: 5px auto #8f8f8f;
 }
 
 a:hover{
