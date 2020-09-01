@@ -98,7 +98,6 @@ h2{
 	text-align: center;
 }*/
 
-/*button:focus, a:focus,*/ 
 
 a#navbarDropdown.nav-link.dropdown-toggle:active, a#navbarDropdown.nav-link.dropdown-toggle:focus, button:focus, a:focus{
 	outline: none; 5px auto #8f8f8f !important;
@@ -160,35 +159,54 @@ li{
 /*Content*/
 
 .big-img{
-	width: 100vw;
+	width: 100%;
 	padding: none;
 	margin: none;
 	background-repeat: no-repeat;
 }
 
 .big-img-meraki{
-	height: calc(100vw * 835 / 1024);
 	background-image: url(img/meraki.jpg);
 	background-size: 100vw 81.5429688vw;
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	max-height: 80.5984556vw !important;
-	min-height: 56.3131313vw;
+	max-height: 81.5429688vw;
+	min-height: 50vw;
 }
 
-.meraki-definition{
-	width: 32%;
-	font-family: 'ZCOOL XiaoWei', serif;
-	font-size: 4vh;
-	color: white;
-	text-shadow: 1px 1px 1px black;
-	letter-spacing: 0.2vw;
-	text-align: right;
-	margin: 5% 1% 2% 0%;
-	align-self: flex-end;
+@media (max-width: 576px){
+	.big-img-meraki{
+		height: calc(100vh - 54px);
+	}
 }
+
+@media (min-width: 576px) and (max-height: 768px){
+	.big-img-meraki{
+		height: calc(100vh - 73px);
+	}
+}
+
+@media (min-width: 768px) and (max-height: 992px){
+	.big-img-meraki{
+		height: calc(100vh - 101px);
+	}
+}
+
+@media (min-width: 992px){
+	.big-img-meraki{
+		height: 100vh;
+	}
+}
+
+/*1200 68
+992 101
+768 73
+576 54*/
+
+
+
 
 
 .meera-maharaj-jpg{
@@ -309,6 +327,27 @@ li{
 	flex-wrap: nowrap;
 }
 
+.meraki-definition{
+	width: 65%;
+	font-family: 'ZCOOL XiaoWei', serif;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	letter-spacing: 0.2vw;
+	text-align: right;
+	margin: 5% 1% 2% 0%;
+	align-self: flex-end;
+}
+
+.meraki-definition-title{
+	flex-wrap: nowrap;
+	font-size: 3.5vw;
+	min-width: 182.83px;
+}
+
+.meraki-definition-text{
+	font-size: 3vw;
+}
+
 .meraki-title{
 	width: 100%;
 	display: flex;
@@ -325,6 +364,18 @@ li{
 	display: inline-flex;
 }
 
+/*.meraki-definition{
+	width: 32%;
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size: 4vh;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	letter-spacing: 0.2vw;
+	text-align: right;
+	margin: 5% 1% 2% 0%;
+	align-self: flex-end;
+}
+
 .meraki-definition-title{
 	flex-wrap: nowrap;
 	font-size: 6vw;
@@ -334,7 +385,7 @@ li{
 .meraki-definition-text{
 	font-size: 5vw;
 }
-
+*/
 .meraki-definition-title, .meraki-definition-text{
 	margin-right: 1%;
 }
