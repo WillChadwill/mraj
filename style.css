@@ -86,7 +86,7 @@ h2{
 		justify-content: center;
 	}
 	.navbar-nav .dropdown-menu{
-		position: absolute !important;
+		position: absolute;
 	}
 }
 
@@ -98,8 +98,8 @@ h2{
 	text-align: center;
 }*/
 
-button:focus, a:focus{
-	outline: 5px auto #8f8f8f;
+button:focus, a:focus, .navbarDropdown:focus{
+	outline: 5px auto #8f8f8f !important;
 }
 
 a:hover{
