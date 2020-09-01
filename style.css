@@ -98,6 +98,10 @@ h2{
 	text-align: center;
 }*/
 
+button:focus, a:focus{
+	outline: 5px auto #8f8f8f;
+}
+
 a:hover{
 	transition: 0.3s;
 }
