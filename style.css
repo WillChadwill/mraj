@@ -100,7 +100,7 @@ h2{
 
 
 a#navbarDropdown.nav-link.dropdown-toggle:active, a#navbarDropdown.nav-link.dropdown-toggle:focus, button:focus, a:focus{
-	outline: none; 5px auto #8f8f8f !important;
+	outline: none; /*5px auto #8f8f8f !important;*/
 }
 
 a:hover{
@@ -173,7 +173,7 @@ li{
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	max-height: 81.5429688vw;
-	min-height: 50vw;
+	min-height: 48vw;
 }
 
 @media (max-width: 576px){
@@ -199,15 +199,6 @@ li{
 		height: 100vh;
 	}
 }
-
-/*1200 68
-992 101
-768 73
-576 54*/
-
-
-
-
 
 .meera-maharaj-jpg{
 	background-image: url(img/meera-maharaj.jpg);
@@ -355,37 +346,13 @@ li{
 }
 
 .meraki-artists{
-	margin: 5% 3% 0 0;
-	
-
+	margin: 5% 1.5% 0 0;
 }
 
 .definition-container{
 	display: inline-flex;
 }
 
-/*.meraki-definition{
-	width: 32%;
-	font-family: 'ZCOOL XiaoWei', serif;
-	font-size: 4vh;
-	color: white;
-	text-shadow: 1px 1px 1px black;
-	letter-spacing: 0.2vw;
-	text-align: right;
-	margin: 5% 1% 2% 0%;
-	align-self: flex-end;
-}
-
-.meraki-definition-title{
-	flex-wrap: nowrap;
-	font-size: 6vw;
-	min-width: 182.83px;
-}
-
-.meraki-definition-text{
-	font-size: 5vw;
-}
-*/
 .meraki-definition-title, .meraki-definition-text{
 	margin-right: 1%;
 }
@@ -393,3 +360,18 @@ li{
 strong{
 	font-size: 1.1em;
 }
+
+.content-meraki{
+	margin: auto;
+	width: 90vw;
+}
+
+.meraki-h3{
+	font-family: 'ZCOOL XiaoWei', serif;
+	font-size: 10vw;
+	letter-spacing: 2vw;
+	border: orange 1px solid;
+	display: inline-flex;
+	margin: 10px 0px;
+}
+
