@@ -370,8 +370,16 @@ strong{
 	font-family: 'ZCOOL XiaoWei', serif;
 	font-size: 10vw;
 	letter-spacing: 2vw;
-	border: orange 1px solid;
 	display: inline-flex;
 	margin: 10px 0px;
 }
 
+.meraki-h4{
+	font-family: 'ZCOOL XiaoWei', serif;
+	text-decoration: bold;
+}
+
+.responsive-media-margin{
+	width: 60%;
+	margin: 5% 20%;
+}
