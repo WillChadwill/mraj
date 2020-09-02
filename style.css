@@ -163,17 +163,33 @@ li{
 	padding: none;
 	margin: none;
 	background-repeat: no-repeat;
+	display: flex;
 }
 
 .big-img-meraki{
 	background-image: url(img/meraki.jpg);
 	background-size: 100vw 81.5429688vw;
-	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	max-height: 81.5429688vw;
 	min-height: 48vw;
+}
+
+.big-img-indigo{
+	background-image: url(img/improvindigo.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: 'Quattrocento', serif;
+	text-align: center;
+	color: white;
+	height: 56.8333333vw;
+	max-width: 1110px;
+	max-height: 522px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 576px){
@@ -382,4 +398,19 @@ strong{
 .responsive-media-margin{
 	width: 60%;
 	margin: 5% 20%;
+}
+
+.indigo-h1{
+	font-weight: 700;
+	font-size: 4vw;
+	margin-top: 10%;
+}
+
+.indigo-h2{
+	font-size: 2.2vw;
+    line-height: 160%;
+}
+
+.indigo-h2:first-of-type{
+	margin-top: 5%;
 }
