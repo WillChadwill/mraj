@@ -67,7 +67,65 @@
         </ul>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="contact-h3">Contact Meera</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-9">
+          <form action="" class="main-form needs-validation" novalidate>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="text" name="email" class="form-control" required>
+                  <div class="invalid-feedback">Must be a valid email address.</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Message">Message</label>
+              <textarea required name="mesage" wrap="soft" rows=5 class="form-control" required> </textarea>
+             <!--  <input type="text" name="message" class="form-control" required> -->
+              <div class="invalid-feedback">
+                Please write your message in the box.
+              </div>
+            </div>
+            <div>
+              <input class="btn btn-outline-primary" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        <div class="col col-md-3">
+          <div class="row contact-details">
+            <div><a href="mailto:meeramaharaj970"><img src="icon/002-email.png"></a></div>
+            <p><a href="mailto:meeramaharaj970">meeramaharaj970@gmail.com</a></p>
+          </div>
+          <div class="row contact-details">
+            <div><img src="icon/003-phone-call.png"></div>
+            <p>+44 7748 425286</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+</section>
+<!--Section: Contact v.2-->
+
     <footer>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       <p>&copy; Will Chadwick 2020</p>
     </footer>
 
@@ -76,5 +134,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+      var form = document.querySelector('.needs-validation');
+
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+            form.classList.add('was-validated')
+        })
+    </script>
   </body>
 </html>
