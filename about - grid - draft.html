@@ -14,7 +14,71 @@
     <!--My Style Sheet-->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Contact - Meera Maharaj</title>
+    <link rel="icon" href="img/icon.jpg">
+    <title>About - Meera Maharaj</title>
+    <style type="text/css">
+      @media (min-width: 576px){
+        .container5050-md{
+          display: grid;
+          grid-template-areas: "left-50 right-50";
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          height: 85vh;
+        }
+        .left-50{
+        }
+
+        .right-50{
+          overflow-y: scroll;
+        }
+
+        .teaser-img{
+          width: 100%;
+          height: 85vh;
+          background-size: cover;
+          background-position: right 40% center;
+          background-repeat: no-repeat;
+          /*position: -webkit-sticky;*/
+          /*position: sticky;*/
+        }
+      }
+
+      @media (max-width: 576px){
+        .teaser-img{
+          margin: 5%;
+          height: 80vh;
+          min-height: 40vw;
+          max-height: 100vw;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .left-50{
+        }
+      }
+
+      .right-50{
+        padding: 5%;
+      }
+
+      .teaser-img-sm-md{
+        top: 107px;
+      }
+
+      .teaser-img-lg{
+        top: 68px;
+      }
+
+      ::-webkit-scrollbar {
+          width: 0px;  /* Remove scrollbar space */
+          background: transparent;  /* Optional: just make scrollbar invisible */
+      }
+      /* Optional: show position indicator in red */
+      ::-webkit-scrollbar-thumb {
+          background: #FF0000;
+      }
+
+    </style>
   </head>
   <body>
 <!--Header-->
@@ -32,7 +96,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item dropdown">
@@ -58,7 +122,7 @@
           <li class="nav-item">
             <a class="nav-link" href="education.html" tabindex="-1" aria-disabled="true">Education</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
           </li>
           <li class="nav-item">
@@ -68,83 +132,41 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3 class="contact-h3">Contact Meera</h3>
-          <p>Don't hesitate to get in touch via the form below, email, text or phone.</p>
-        </div>
+<!--content-->
+    <div class="container5050-md">
+      <div class="left-50" style="background-color: coral;">
+              <div class="teaser-img img-about" sr-only="Meera with her flute in front of landscape backdrop">
+              </div>
       </div>
-      <div class="row">
-        <div class="col-md-8">
-          <form action="" class="main-form needs-validation" novalidate>
-            <div class="row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" required>
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="email" class="text-nowrap">Email Address</label>
-                  <input type="text" name="email" class="form-control" required>
-                  <div class="invalid-feedback">Must be a valid email address.</div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="Message">Message</label>
-              <textarea required name="mesage" wrap="soft" rows=5 class="form-control" required> </textarea>
-             <!--  <input type="text" name="message" class="form-control" required> -->
-              <div class="invalid-feedback">
-                Please write your message in the box.
-              </div>
-            </div>
-            <div>
-              <input class="btn btn-outline-primary" type="submit" value="Submit">
-            </div>
-          </form>
-        </div>
-        <div class="col-md-4">
-          <div class="row contact-details">
-            <div class="icon-detail">
-              <div><a href="mailto:meeramaharaj970"><img src="icon/002-email.png"></a></div>
-            <p"><a href="mailto:meeramaharaj970">meeramaharaj970@gmail.com</a></p>
-            </div>
-            <div class="icon-detail">
-              <div><a href="tel:+447748425286"><img src="icon/003-phone-call.png"></a></div>
-            <p><a href="tel:+447748425286">+44 7748 425286</a></p>
-            </div>
-          </div>
-        </div>
+      <div class="right-50" style="background-color: lightgreen;">
+        <h3>Biography</h3>
+        <p>
+          Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
+        </p>
+        <p>
+          Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
+       </p>
+       <p>
+          She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
+        </p>
+        <p>
+          In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
+        </p>
+        <p>
+          Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
+        </p>
       </div>
-    </div>
-    <div class="contact-img">
-      <img src="img/meeracontact.jpg" class="img-fluid">
     </div>
 
-    <footer>
-      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      <p>&copy; Will Chadwick 2020</p>
-    </footer>
+
+  <footer>
+    <p>&copy; Will Chadwick 2020</p>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <script>
-      var form = document.querySelector('.needs-validation');
-
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-            form.classList.add('was-validated')
-        })
-    </script>
   </body>
 </html>

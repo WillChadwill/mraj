@@ -108,34 +108,210 @@
 			<a href="http://www.jamesgirlingmusic.com">www.jamesgirlingmusic.com</a>
 		</p>
 		<p>
-          <a href="doc/meraki_repertoire_list.pdf" target="_blank">Click here</a> to download a repertoire list.
+          <button class="btn btn-outline-secondary" id="repListToggle">Click here</button> to <span id="showHideRepList">see</span> a repertoire list.
         </p>
+        <div id="repList" class="container-fluid rep-list text-center d-none">
+				<h5>Meraki Repertoire List</h5>
+				<ul>
+					<li>
+						Suite Populaire Espagnol – De Falla
+					</li>
+					<li>
+						Histoire du Tango – Piazzolla
+					</li>
+					<li>
+						Oblivion – Piazzolla
+					</li>
+					<li>
+						Liebertango – Piazzolla
+					</li>
+					<li>
+						Romanian Folk Dances – Bartok
+					</li>
+					<li>
+						Four Macedonian Folk Songs – Tadic
+					</li>
+					<li>
+						Nemesis – Scott
+					</li>
+					<li>
+						Toward the Sea – Takemitsu
+					</li>
+					<li>
+						Bachianas Brasileiras No.5 – Villa Lobos
+					</li>
+					<li>
+						A House is not a Home – Bacharach (arr. Girling)
+					</li>
+					<li>
+						Skylark – Carmichael (arr. Meraki)
+					</li>
+					<li>
+						Luiza – Jobim
+					</li>
+					<li>
+						Corcovado – Jobim
+					</li>
+					<li>
+						Calypso Medley – Might Sparrow (arr. Meraki)
+					</li>
+					<li>
+						Spain – Chick Corea (arr. Meraki)
+					</li>
+					<li>
+						Children’s Songs No 3, 6 and 7 – Corea (arr. Girling)
+					</li>
+					<li>
+						Sonatina – Tedesco
+					</li>
+					<li>
+						Salt of the Earth – Scott
+					</li>
+					<li>
+						Paquito - Scott
+					</li>
+				</ul>
+				<p><a href="doc/meraki_repertoire_list.pdf" target="_blank">Click here</a> to download Meraki's repertoire list.</p>
+			</div>
         <p>
-          <a href="doc/sample_programmes_meraki.pdf" target="_blank">Click here</a> to download sample programmes.
+          <button id="sampleProgrammesToggle" class="btn btn-outline-secondary">Click here</button> to <span id="showHideProgrammes">see</span> sample programmes.
         </p>
-        <h3 class="meraki-h3">Media</h3>
+
+        <div id="sampleProgrammes" class="sample-programmes d-none">
+        	<div class="row">
+        		<div class="evening col-sm-6 my-2 my-sm-0">
+        		<h5>Music society - evening recital</h5>
+	        	<ul>
+	        		<li>
+	        			Four Macedonian Pieces (for alto flute and guitar) - Tadic
+	        		</li>
+	        		<li>
+	        			Toward the Sea (for alto flute and guitar)– Takemitsu
+	        		</li>
+	        		<li>
+	        			Nemesis – Andy Scott
+	        		</li>
+	        		<li>
+	        			INTERVAL
+	        		</li>
+	        		<li>
+	        			Histoire du Tango – Piazzolla
+	        		</li>
+	        		<li>
+	        			Romanian Folk Dances - Bartok
+	        		</li>
+	        		<li>
+	        			A House is Not a Home – Bacharach (arr. Girling)
+	        		</li>
+	        		<li>
+	        			Salt of the Earth – Scott (arr. Girling)
+	        		</li>
+	        	</ul>
+	        	<p>Duration: 45 + 45 mins</p>
+	        	<p>
+	        		*This evening recital programme offers an eclectic mix of repertoire, focusing in particular on folk songs and traditional music from many corners of the globe. This ranges from Macedonian and Japanese influenced works to Hungarian, Tango inspired and Latin/jazz sound worlds. It also features alto flute allowing for standard repertoire alongside less commonly played works.
+	        	</p>
+	        </div>
+	        <div class="lunch col-sm-6 my-2 my-sm-0">
+	        	<h5>Music Society - Lunchtime recital</h5>
+	        	<ul>
+	        		<li>
+	        			Suite Populaire Espagnol - Manuel de Falla
+	        		</li>
+	        		<li>
+	        			Historic du Tango – Piazzolla
+	        		</li>
+	        		<li>
+	        			Toward the Sea (for alto flute and guitar) - Takemitsu
+	        		</li>
+	        		<li>
+	        			Nemesis – Andy Scott
+	        		</li>
+	        	</ul>
+	        	<p>Duration: 1 hour</p>
+	        	<p>
+	        		* This programme presents hugely enjoyable repertoire spanning from the Spanish folk songs of de Falla to the Latin/jazz infused sound world of Andy Scott’s Nemesis. 
+	        	</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="lunch-medium col-sm-6 my-2 my-sm-0">
+	        	<h5>Medium programme - Lunchtime recital</h5>
+	        	<ul>
+	        		<li>
+	        			Suite Populaire Espagnol - Manuel de Falla
+	        		</li>
+	        		<li>
+	        			Children's Songs No.s 3, 6 & 7 (alto flute included) – Corea (arr. Girling)
+	        		</li>
+	        		<li>
+	        			Cafe -1930 – Piazzolla
+	        		</li>
+	        		<li>
+	        			Four Macedonian Folk Pieces (for alto flute and guitar) - Tadic
+	        		</li>
+	        		<li>
+	        			Spain - Corea (arr. Meraki Duo)
+	        		</li>
+	        	</ul>
+	        	<p>Duration: 45 minutes</p>
+	        	<p>
+	        		* Including jazz arrangements as well as the hugely popular suite by de Falla, this programme appeals to both the well versed concert goer as well as those who enjoy a wider range of styles.
+	        	</p>
+	        </div>
+	        <div class="light col-sm-6 my-2 my-sm-0">
+	        	<h5>Light programme</h5>
+	        	<ul>
+	        		<li>
+	        			Suite Populaire Espagnol - De Falla
+	        		</li>
+	        		<li>
+	        			Children's Songs No.s 3, 6 & 7 – Corea (arr. Girling)
+	        		</li>
+	        		<li>
+	        			Bachianas Brasilieras – Villa Lobos
+	        		</li>
+	        		<li>
+	        			Café 1930 – Piazzolla
+	        		</li>
+	        		<li>
+	        			A House is Not a Home – Bacharach (arr. Girling)
+	        		</li>
+	        		<li>
+	        			Luiza - Jobim
+	        		</li>
+	        		<li>
+	        			Paquito – Scott (Arr. Girling)
+	        		</li>
+	        	</ul>
+	        	<p>Duration: 45 mins</p>
+	        	<p>
+	        		*An enormously fun programme of popular and easy listening works. Spanning from Bossa Novas to jazz arrangements and Latin rhythms, there is something for everyone.
+	        	</p>
+	        </div>
+        	</div>
+        	<p><a href="doc/sample_programmes_meraki.pdf" target="_blank">Click here</a> to download Meraki's sample programmes.</p>      
+        </div>
+
+        </div>
+		<div class="content-meraki">
+			<h3 class="meraki-h3">Media</h3>
    		<div>
    			<div class="responsive-media-margin embed-responsive embed-responsive-16by9">
    				<iframe class="embed-responsive-item" width="401" height="256" src="https://www.youtube.com/embed/VzPGvOJzz6c" allowFullScreen='allowFullScreen'></iframe>
    			</div>
-   			<div class="container container-2 d-none d-lg-block">
-  				<div class="row">
-      				<div class="col-md-12 bs-linebreak-1"></div>
-    			</div>
-    		</div>
+   			<hr>
    			<div class="responsive-media-margin embed-responsive embed-responsive-16by9">
    				<iframe class="embed-responsive-item" width="401" height="256" src="https://www.youtube.com/embed/2RlQcSMFb44" allowFullScreen='allowFullScreen'></iframe>
    			</div>
-   			<div class="container container-2 d-none d-lg-block">
-  				<div class="row">
-      				<div class="col-md-12 bs-linebreak-1"></div>
-    			</div>
-    		</div>
+   			<hr>
    			<div class="responsive-media-margin embed-responsive embed-responsive-16by9">
    				<iframe class="embed-responsive-item" width="401" height="256" src="https://www.youtube.com/embed/M35dAIq8shc" allowFullScreen='allowFullScreen'></iframe>
    			</div>
 		</div>
 	</div>
+		</div>
+        
 
 	<footer>
 		<p>&copy; Will Chadwick 2020</p>
@@ -147,5 +323,40 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			const programmeToggle = document.getElementById('sampleProgrammesToggle');
+
+			const repToggle = document.getElementById('repListToggle');
+
+			let showHideProgrammes = document.getElementById('showHideProgrammes');
+
+			let showHideRepList = document.getElementById('showHideRepList');
+
+			programmeToggle.addEventListener('click', function() {
+				const sampleProgrammes = document.getElementById('sampleProgrammes');
+
+				if(sampleProgrammes.classList.contains('d-none')) {
+					sampleProgrammes.classList.remove('d-none');
+					showHideProgrammes.textContent = 'hide';
+				} else {
+					sampleProgrammes.classList.add('d-none')
+					showHideProgrammes.textContent = 'see';
+				}
+			});
+
+			repToggle.addEventListener('click', function() {
+				const repList = document.getElementById('repList');
+
+				if(repList.classList.contains('d-none')) {
+					repList.classList.remove('d-none');
+					showHideRepList.textContent = 'hide';
+				} else {
+					repList.classList.add('d-none');
+					showHideRepList.textContent = 'see';
+				}
+			});
+
+
+		</script>
 	</body>
 </html>

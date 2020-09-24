@@ -17,12 +17,12 @@
     <link rel="icon" href="img/icon.jpg">
     <title>About - Meera Maharaj</title>
   </head>
-  <body>
+  <body onresize="offsetTeaser()" onload="offsetTeaser()">
 <!--Header-->
     <h1 class="d-none d-lg-block"><a class="title-link" href="index.html">Meera Maharaj</a></h1>
     <h2 class="d-none d-lg-block"><a class="title-link" href="index.html">Flute</a></h2>
 <!--Navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" id="navbar">
       <a class="navbar-brand d-none d-sm-block d-lg-none mx-auto" href="index.html"><h1 class="header-sm-lg text-nowrap">Meera Maharaj</h1></a>
       <a class="navbar-brand d-block d-sm-none mr-auto" href="index.html"><h1 class="header-xs text-wrap">Meera Maharaj</h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,44 +69,14 @@
       </div>
     </nav>
 
-    <!--For xs screens-->
-    <div class="container d-sm-none">
-      <div class="row text-center">
-        <div class="col-sm-6 img-container-xs">
-          <img src="img/meera-landscape.jpg" alt="Meera in front of landscape backdrop">
-        </div>
-        <div class="col-sm-6">
-          <h3>Biography</h3>
-        </div>
-        <div class="col-sm-6">
-          <p>
-           Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
-          </p>
-          <p>
-           Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
-         </p>
-          <p>
-            She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
-          </p>
-          <p>
-            In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
-         </p>
-          <p>
-            Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
-         </p>
-      </div>
-    </div>
-  </div>
+<!--HERE'S MY ATTEMPT-->
 
-  <!--For screens sm and above-->
-  <div class="biography-container-sm d-none d-sm-flex">
-    <div class="img-container-sm">
-      <div class="d-none d-sm-flex d-lg-none teaser-img teaser-img-sm-md img-about" sr-only="Meera with her flute in front of landscape backdrop">
-      </div>
-      <div class="d-none d-lg-flex teaser-img teaser-img-lg img-about" sr-only="Meera with her flute in front of landscape backdrop">
+  <div class="about-5050">
+    <div class="left-50">
+      <div class="teaser-img img-about" id="teaserImg" sr-only="Meera with her flute in front of landscape backdrop">
       </div>
     </div>
-      <div class="about">
+      <div class="right-50" id="right">
         <h3>Biography</h3>
         <p>
           Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
@@ -127,97 +97,6 @@
     </div>
   </div>
 
-    
-<!--
-    <div class="container nopadding">
-      <div class="row nopadding">
-        <div class="col-6 position-fixed d-none d-md-block nopadding">
-          <img class="img-about img-fluid" src="img/aboutmeera.jpg" alt="Meera in front of landscape backdrop">
-        </div>
-        <div class="col-md-6"></div>
-        <div class="col-md-6">
-          <p>
-           Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
-          </p>
-          <p>
-           Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
-         </p>
-          <p>
-            She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
-          </p>
-          <p>
-            In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
-         </p>
-          <p>
-            Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
-         </p>
-      </div>
-    </div>
-  </div>
--->
-<!--
-    <div class="about-container-img">
-      <img class="img-about img-fluid" src="img/meera-landscape.jpg" alt="Meera in front of landscape backdrop">
-    </div>
-    <div class="about-text">
-    <p>
-          Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
-        </p>
-        <p>
-          Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
-        </p>
-        <p>
-          She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
-        </p>
-        <p>
-          In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
-        </p>
-        <p>Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
-        </p>
-      </div>
--->
-
-<!--
-    <div class="container about">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="profile img-fluid" src="img/meera-landscape.jpg" alt="Meera in front of landscape backdrop.">
-        </div>
-        <div class="col-md-6">
-          <p>
-              Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
-          </p>
-        </div>
-      </div>
-      <div class= row>
-        <div class="col-lg-6">
-          <p>
-            Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
-          </p>
-        </div>
-        <div class=col-lg-6>
-          <p>
-            She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <p>
-            In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
-          </p>
-          <p>
-            Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
-          </p>
-        </div>
-        <div class="col">
-         <img src="img/aboutmeera.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
--->
-
   <footer>
     <p>&copy; Will Chadwick 2020</p>
   </footer>
@@ -227,26 +106,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      
+
+      function offsetTeaser() {
+        var winWidth = window.innerWidth;
+        var winHeight = window.innerHeight;
+        var navHeight = document.getElementById('navbar').offsetHeight;
+        var printNavHeight = navHeight + "px";
+        var container5050BreakPoint = 576;
+        var teaserImgHeight = winHeight - navHeight;
+        var printImgHeight = teaserImgHeight + "px";
+
+        if (window.innerWidth > container5050BreakPoint){
+          document.getElementById('teaserImg').style.top = printNavHeight;
+          document.getElementById('teaserImg').style.height = printImgHeight;
+        }
+      }
+
+    </script>
+
   </body>
 </html>
-
-<!--
-      <div class="written-content about">
-        <img class=profile src="img/aboutmeera.jpg" alt="Profile">
-        <p>
-          Meera Maharaj enjoys a diverse performing career throughout the UK and beyond. A keen chamber musician, she is currently a Tunnell Trust, Park Lane Group and Countess of Munster Recital Scheme artist, together with pianist Dominic Degavino. Her duo with guitarist James Girling, was formed in 2013 and as the Meraki Duo they enjoy frequent concerts across the UK. In 2019 they were finalists in the Royal Overseas League competition and are current International Guitar Foundation Young Artists.
-        </p>
-        <p>
-          Meera strongly believes that outreach work is equally important to her musical life and Meraki Duo are Live Music Now artists. Her competition successes includefirst prize in the Royal Academy of Music Flute Competition and the Dutch International Flute Competition as well as 3rd prize in the British Flute Society “Young Artist” Competition.
-        </p>
-        <p>
-          She graduated with Distinction in her Masters, studying with Michael Cox at the Royal Academy of Music, where she received generous scholarships supported by Sir Elton John, Countess of Munster Musical Trust andHelp Musicians UK Postgraduate Awards. In 2017, she graduated from the Royal Northern College of Music with first class honours, having studied with Wissam Boustany and Laura Jellicoe. Previously, she spent six years at the Junior RNCM.
-        </p>
-        <p>
-          In 2018 Meera won a place in the Pro Youth Philharmonia and has previously participated in the BBC Philharmonic Orchestra’s Professional Experience Scheme. In addition, she enjoys improvisation, frequently incorporating this discipline into recitals as well as collaborating with other art forms. Jazz and music from across the world is also of great interest to her.
-        </p>
-        <p>Meera has given solo/duo performances at the Concertgebouw, Bridgewater Hall, Wigmore Hall, Kings Place, St Martin in the Fields and St James’ Piccadilly with a busy forthcoming concert diary across the UK. She has organised a number of annual concerts in aid of her local Foodbank.
-        </p>
-      </div>
-
-    -->
